@@ -14,8 +14,8 @@ import static org.hamcrest.Matchers.is;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+@ExtendWith(SpringExtension.class)
 @WebMvcTest(HellController.class)
-@Transactional
 public class HelloControllerTest {
 
     @Autowired

@@ -3,6 +3,7 @@ package com.ultimate.bookmanager.domain;
 import com.ultimate.bookmanager.domain.posts.Posts;
 import com.ultimate.bookmanager.domain.posts.PostsRepository;
 import org.aspectj.lang.annotation.After;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -19,7 +20,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
-    @After("")
+    @AfterEach
     public void cleanup() {
         postsRepository.deleteAll();
     }
